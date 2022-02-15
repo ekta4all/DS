@@ -1,0 +1,89 @@
+Data Structure
+
+Intro-->
+
+Data---> raw facts and fig
+
+Structure-->oraganise the data
+
+data structure is a method of organising large amount of data so that any operation on data becomes easy
+
+Types:--
+
+Linear -->in which the data is organised sequentially
+
+Arrays
+List
+Stack 
+Queue
+
+
+Non-linear-->in which data is organised randomally
+
+Tree
+Graph
+Heap
+Dictionaries
+
+Arrays--> collection of elements having same type of data
+
+int a[5];
+
+for(i=0;i<5;i++)
+{
+printf("\n enter the element");
+scanf("%d",&a[i]);
+}
+
+Search--->
+
+Linear Search
+Binary Search
+
+
+Step 1: Enter the array
+
+Step 2: Logic to find the element in an array
+
+step 3: Print the element found or not found
+
+
+
+Binary Search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
