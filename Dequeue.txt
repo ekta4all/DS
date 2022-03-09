@@ -1,0 +1,85 @@
+1.	void add_item_rear()
+2.	{
+3.		int num;
+4.		printf("\n Enter Item to insert : ");
+5.		scanf("%d",&num);
+6.		if(rear==MAX)
+7.		{
+8.			printf("\n Queue is Overflow");
+9.			return;
+10.		}
+11.		else
+12.		{
+13.			rear++;
+14.			q[rear]=num;
+15.			if(rear==0)
+16.				rear=1;
+17.			if(front==0)
+18.				front=1;
+19.		}
+20.	}
+
+1.	void add_item_front()
+2.	{
+3.		int num;
+4.		printf("\n Enter item to insert:");
+5.		scanf("%d",&num);
+6.		if(front<=1)
+7.		{
+8.			printf("\n Cannot add item at front end");
+9.			return;
+10.		}
+11.		else
+12.		{
+13.			front--;
+14.			q[front]=num;
+15.		}
+16.	}
+
+1.	void delete_item_front()
+2.	{
+3.		int num;
+4.		if(front==0)
+5.		{
+6.			printf("\n Queue is Underflow\n");
+7.			return;
+8.		}
+9.		else
+10.		{
+11.			num=q[front];
+12.			printf("\n Deleted item is %d\n",num);
+13.			if(front==rear)
+14.			{
+15.				front=0;
+16.				rear=0;
+17.			}
+18.			else
+19.			{
+20.				front++;
+21.			}
+22.		}
+23.	}
+
+1.	void delete_item_rear()
+2.	{
+3.		int num;
+4.		if(rear==0)
+5.		{
+6.			printf("\n Cannot delete item at rear end\n");
+7.			return;
+8.		}
+9.		else
+10.		{
+11.			num=q[rear];
+12.			if(front==rear)
+13.			{
+14.				front=0;
+15.				rear=0;
+16.			}
+17.			else
+18.			{
+19.				rear--;
+20.				printf("\n Deleted item is %d\n",num);
+21.			}
+22.		}
+23.	}
